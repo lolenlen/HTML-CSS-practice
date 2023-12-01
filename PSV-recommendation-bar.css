@@ -1,0 +1,162 @@
+.recommendation-bar-actions {
+  margin-bottom: 20px;
+}
+
+.rb1 {
+  font-family: roboto;
+  font-size: 16px;
+  border: 0px;
+  border-radius: 8px;
+  padding:5px 8px;
+  margin-right: 5px;
+}
+
+.rb2, .rb3, .rb4 {
+  font-family: roboto;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(46, 46, 46);
+  border: 0px;
+  border-radius: 8px;
+  padding:5px 8px;
+  margin-right: 5px;
+}
+
+.rb5 {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(14, 13, 13);
+  border: 0px;
+  border-radius: 8px;
+  padding:5px 8px;
+  margin-right: 5px;
+}
+
+.r-link {
+  text-decoration: none;
+
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: row;
+  margin:10px 0px ;
+}
+
+.r-thumbnail {
+  margin-right: 8px;
+  position: relative;
+}
+
+  .thumbnail {
+    border-bottom: 3px solid red;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .t-hover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .r-thumbnail:hover .t-hover {
+    opacity: 1;
+  }
+
+  .th {
+    width: 18px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 248, 248, 0.712);
+  }
+
+  .thumbnail2 {
+    border-radius: 5px;
+  }
+
+  .thumbnail2 {
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .mix {
+    position: absolute;
+    width: 20px;
+    bottom: 4px;
+    left: 0px;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 5px 70px;
+  }
+
+
+    .video-time {
+      background-color: black;
+      color: white;
+      position: absolute;
+      bottom: 12px;
+      right: 4px;
+      font-family: roboto;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px;
+      border-radius: 2px;
+      opacity: 1;
+      transition: opacity 0.2s;
+    }
+
+    .r-thumbnail:hover .video-time{
+      opacity: 0px;
+    }
+
+
+.r-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+}
+
+.r-title {
+  font-size: 14px;
+  font-family: roboto;
+  font-weight: 500;
+  margin-bottom: -5px;
+  margin-top:5px;
+  color: white;
+}
+
+.r-owners {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+  margin-bottom: -20px;
+}
+
+.r-owner {
+  padding-right: 5px;
+}
+
+.r-views {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: rgb(170, 170, 170);
+}
+
+.new {
+  font-size: 12px;
+  font-family: roboto;
+  font-weight: 500;
+  color: rgb(170, 170, 170);
+  background-color: rgba(100, 100, 100, 2);
+  margin-top: -10px;
+  width: 26px;
+  padding-left: 2px;
+}

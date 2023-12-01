@@ -1,0 +1,24 @@
+.bodybody {
+  background-color: rgb(14, 13, 13);
+  font-family: Roboto;
+  margin: 0px;
+  height: 3000px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.throbber {
+  width: 40px;
+  opacity: 0.7;
+}
+
+.loading2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+

@@ -1,0 +1,451 @@
+.videogrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px 70px 0px 25px;
+  margin: 0px;
+  font-family: roboto;
+  color: white;
+}
+
+  .main-left {
+  padding: 0px 15px;
+  margin-left: 60px;
+  }
+
+  .video {
+    position: relative;
+  }
+
+    .pyro-thumbnail {
+      width: 1223px;  
+      position: relative;
+      box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.116);
+    }
+
+      .video-action1, .video-action2 {
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+      }
+
+      .video-action1 {
+        bottom: 4.5px;
+        padding-left: 5px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .VA {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .tooltip-VA11,  .tooltip-VA12, .tooltip-VA13 {
+        position: absolute;
+        background-color:  rgb(14, 13, 13);
+        color: white;
+        border-radius: 2px;
+        font-size: 14px;
+        padding: 4px 8px;
+        opacity: 0;
+        transition: opacity 0.1s;
+        white-space: nowrap;
+        font-family: roboto;
+        pointer-events: none;
+        z-index: 11;
+      }
+
+      .tooltip-VA11, .tooltip-VA13 {
+        top: -40px;
+        left: -5px;
+      }
+
+      .tooltip-VA12 {
+        top: -117px;     
+        display: flex;
+        flex-direction: row;
+      }
+
+      .tt-va12 {
+        width: 180px;
+      }
+
+      .VA1:hover .tooltip-VA11{
+        opacity: 1;
+        
+      }
+
+      .timestamp {
+        font-size: 13px;
+      }
+
+      .video-action2 {
+        right: 0px;
+        left: 0px;
+        bottom: 4px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        justify-content: end;
+        border-top: 3.5px solid rgba(255, 255, 255, 0.253);
+        background-color: rgba(255, 255, 255, 0.027);
+      }
+
+      .VA1, .VA2 {
+        width: 25px;
+        padding: 0px 10px ;
+        cursor: pointer;
+      }
+
+      .VA1:hover {
+        cursor: pointer;
+      }
+
+      .VA1-1 {
+        width: 25px;
+        padding: 0px 15px ;
+      }
+
+    .pyro-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+    }
+
+    .owner {
+    display: grid;
+    grid-template-columns: 60px 120px 500px 1fr;
+    margin-top: 8px;
+    }
+
+        .profile {
+          border-radius: 30px;
+          width: 40px;
+        }
+
+      .owner-description {
+        font-family: roboto, arial;
+      }
+
+      .owner-names {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 5px;
+        align-items: center;
+        padding: 0px;
+        position: relative;
+      }
+
+        .owner-names .tooltip {
+          position: absolute;
+          background-color:  gray;
+          color: white;
+          border-radius: 2px;
+          font-size: 14px;
+          padding: 4px 8px;
+          opacity: 0;
+          transition: opacity 0.5s;
+          white-space: nowrap;
+          font-family: roboto;
+          pointer-events: none;
+          bottom: 30px;
+        }
+
+        .owner-names:hover .tooltip {
+          opacity: 1;
+        } 
+
+        .owner-name {
+          margin-top: 0px;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 2px;
+          margin-left: 0px;
+        }
+
+        .checkmark {
+         font-size: smaller;
+         margin-top: 0px;
+         border-radius: 20px;
+         padding: 0px 3px;
+         background-color: darkgray;
+         margin-bottom: 2px;
+        }
+
+        .subcount {
+          font-size: 14px;
+          color: darkgray;
+        }
+
+      .subscription {
+        margin-left: 30px;
+        display: grid;
+        grid-template-columns: 70px 160px;
+      }
+
+        .join {
+          width: 60px;
+          height: 36px;
+          color: black;
+          background-color: white;
+          border: 0px solid;
+          font-size: 14px;
+          border-radius: 40px;
+          cursor: pointer;
+        }
+
+        .join:hover {
+          opacity: 0.7;
+        }
+
+        .join:active {
+          opacity: 0.5;
+        }
+
+        .sub {
+          font-size: 14px;
+          width: 150px;
+          height: 36px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          color: white;
+          background-color: rgb(46, 46, 46);
+          border-radius: 40px;
+          border: 0px solid;
+          padding: 0px 15px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+
+        .sub:hover {
+          opacity: 0.7;
+        }
+
+        .sub:active {
+          opacity: 0.5;
+        }
+          .bell {
+            width: 26px;
+          }
+
+          .sub1 { 
+          font-weight: 500;
+          font-family: roboto;
+          }
+
+          .sub2 {
+            font-weight: lighter;
+            font-size: 20px;
+            padding-top: 5px;
+          }
+  
+   .user-action {
+    display: flex;
+    justify-content: space-between;
+   }
+
+    .share-button, .download-button, .heart-button, .cut-button, .like-button, .dislike-button, .more-b {
+      color: white;
+      background-color: rgb(46, 46, 46);
+      border-radius: 40px;
+      border: 0px solid;
+      cursor: pointer;
+      align-items: center;
+      height: 36px;
+      display: flex;
+      flex-direction: row;
+      padding: 0px 10px 0px 8px;
+      font-family: roboto;
+      font-size: 14px;
+      
+    }
+
+    .share-button :hover, .download-button :hover, .heart-button :hover, .cut-button :hover, .like-button :hover, .dislike-button :hover, .more-b :hover {
+      opacity: 0.7;
+    }
+
+    .share-button:active, .download-button:active, .heart-button:active, .cut-button:active, .like-button:active, .dislike-button:active, .more-b :active {
+      opacity: 0.5;
+    }
+
+    .like-button {
+      width: 80px;
+      margin-right: -24px;
+    }
+
+    .dislike-button {
+      width: 50px;
+      margin-left: 0px;
+      border-left: 0.5px solid white;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    .share-button {
+      width: 85px;
+    }
+
+    .download-button {
+      width: 120px;
+    }
+     
+    .heart-button {
+      width: 90px;
+    }
+
+    .cut-button {
+      width: 70px;
+    }
+
+    .more-b {
+      width: 50px;
+    }
+
+    .text-b {
+      font-weight: 500;
+      display: inline-block;
+      text-align: center;
+      padding-left: 8px;
+    }
+
+     .icon-button {
+      width: 20px;
+     }
+
+.description-box {
+  background-color: rgb(31, 31, 31);
+  padding: 5px 15px;
+  margin-top: 10px;
+  border: 0px;
+  border-radius: 20px;
+  font-family: roboto;
+}
+
+  .video-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .views, .upload-date {
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+.desc {
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.video-desc {
+  margin: 0px;
+  padding: 0px;
+}
+
+.desc-text, .desc-text1 {
+  margin: 0px 0px 3px 0px;
+  padding: 0px;
+}
+
+.original-vid {
+  background-color: rgb(70, 70, 70);
+  border: 0px solid;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+}
+
+.original-vid:hover {
+  opacity: 0.7;
+}
+
+.original-vid:active {
+  opacity: 0.5;
+}
+
+.link-desc {
+  color: rgb(62, 166, 255);
+}
+
+.main-right {
+  padding: 0px 15px;
+  margin-right: 20px;
+}
+
+.video-tags {
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.game-tag, .category-tag {
+  background-color: rgb(31, 31, 31);
+  border: 0px solid;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  height: 100px;
+}
+
+.game-tag {
+  margin-right: 20px;
+}
+
+.game-pics {
+  margin-right: 15px;
+}
+
+.game-pic {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.game-desc {
+  padding: 0px 0px 15px 0px;
+}
+
+.tag-title1, .tag-title2 {
+  font-size: 16px;
+  font-family: roboto;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.tag-title2 {
+  padding-top: 10px;
+}
+
+.game-date {
+  font-weight: 100;
+  font-size: 12px;
+  color: gray;
+}
+
+.category-icon {
+  width: 56px;
+  border-radius: 28px;
+  margin: 20px 25px 20px 25px;
+}
+
+.browse1, .browse2 {
+  border: 0px;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 14px;
+  color: darkgrey;
+  background-color: rgb(31, 31, 31);
+  cursor: pointer;
+  padding-left: 0px;
+}
+
+.browse2 {
+  margin-top: 15px;
+}

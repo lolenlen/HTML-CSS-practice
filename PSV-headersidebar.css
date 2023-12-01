@@ -1,0 +1,125 @@
+.header {
+  height: 56px;
+  border-bottom-color: white ;
+  border-bottom-width: 1px;
+  background-color: rgb(20, 20, 20); 
+  display: flex;
+  align-items: center;
+  margin-right : 0px;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.left-header {
+  display: flex;
+  width: 100px;
+  margin: 0px;
+  margin-right: 300px;
+}
+
+.icon-hamburger {
+  width: 26px;
+  padding: 1px 16px 0px 20px;
+}
+
+.icon-yt {
+  width: 35px;
+}
+
+.middle-header {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin: 0;
+  flex: 1;
+  width: 100px;
+  height: 36px;
+  font-size: 16px;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 50px 0px 0px 50px;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.056);
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, arial;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.button-search {
+  height: 36px;
+  width: 60px;
+  background-color: rgb(46, 46, 46);
+  border-width: 1px;
+  border-color: rgb(48, 48, 48);
+  border-style: solid;
+  border-radius: 0px 50px 50px 0px;
+  margin-left: -1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.button-search:hover {
+ opacity: 0.5;
+}
+
+.button-search:active {
+  opacity: 0.35;
+}
+
+.icon-search {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  padding: 2px 5px 0px 0px;
+}
+
+.voice-search-button {
+  width: 34px;
+  height: 35px;
+  background-color: rgb(48, 48, 48);
+  margin: 0px 0px 0px 15px;
+  border: 0px solid;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.voice-search-button:hover {
+  opacity: 0.5;
+}
+
+.voice-search-button:active {
+  opacity: 0.35;
+}
+
+.right-header {
+  width: 130px;
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 40px;
+  
+}
+
+.icon-upload {
+  width: 26px;
+}
+
+.icon-bell {
+  width: 26px;
+}
+
+.user-profile {
+  width: 32px;
+  border-radius: 16px;
+}
